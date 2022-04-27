@@ -13,6 +13,33 @@ import java.util.Scanner;
 public class MathApp {
 
     public static void main(String[] arg) {
+        MathApp ma = new MathApp();
+        // ma.calculateCube();
+        ma.roundOffTest();// this is a method bava
+        ma.ceilingtest();
+    }
+
+    void roundOffTest() {//this is called function
+
+        float num = 3.6f;
+        double num2 = Math.floor(num);
+        System.out.println(num2);
+        num2 = num2 + 2;
+        System.out.println(num2);
+
+        num = 4.2f;
+        System.out.println(Math.floor(num));
+
+    }
+
+    void ceilingtest() {
+        float n1 = 68.9912345f;
+        double n2 = Math.ceil(n1);
+        System.out.println(n2);
+
+    }
+
+    void calculateCube() {
         int num2;
         Scanner scanner = new Scanner(System.in);
 
@@ -23,7 +50,7 @@ public class MathApp {
             if (num2 == 20) {
                 continue;
             }
-           if (num2==30){
+            if (num2 == 30) {
                 break;
             }
             if (num2 > 0) {
@@ -39,6 +66,7 @@ public class MathApp {
 
         } while (num2 > 0);
         System.out.println("closing application");
+
     }
 
 }
