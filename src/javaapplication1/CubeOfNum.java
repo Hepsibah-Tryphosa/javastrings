@@ -13,7 +13,8 @@ public class CubeOfNum {
 
    private int limit;
 
-    CubeOfNum(int limit) {
+    public CubeOfNum(int limit) // constructor. because class name is given as method name with no return type
+    {
         this.limit = limit;
 
     }

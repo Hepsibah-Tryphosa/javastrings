@@ -12,7 +12,7 @@ public class NewClass {
 
     int limit;
 
-    NewClass(int limit) {
+   public NewClass(int limit) {
         this.limit = limit;
     }
 

@@ -3,13 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.sweety;
-
+//import javaapplication1.CubeOfNum;
+//import javaapplication1.NewClass;
+import javaapplication1.*;
 import java.util.Scanner;
+import java.time.*;
 
-/**
- *
- * @author Sweety
- */
 public class MathApp {
 
     public static void main(String[] arg) {
@@ -17,8 +16,13 @@ public class MathApp {
         // ma.calculateCube();
         ma.roundOffTest();// this is a method bava
         ma.ceilingtest();
+        LocalDate today = LocalDate.now();
+        System.out.println(today);
+        CubeOfNum c = new CubeOfNum(788);
+        NewClass nc=new NewClass(98);
+        
     }
-
+    
     void roundOffTest() {//this is called function
 
         float num = 3.6f;
@@ -29,7 +33,7 @@ public class MathApp {
 
         num = 4.2f;
         System.out.println(Math.floor(num));
-
+        System.out.println(today);
     }
 
     void ceilingtest() {
@@ -66,7 +70,6 @@ public class MathApp {
 
         } while (num2 > 0);
         System.out.println("closing application");
-
     }
 
 }
